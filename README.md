@@ -1,4 +1,4 @@
-# rls-api
+# Rocket League Stats API - NodeJS Library
 
 <div align="center">
   <br />
