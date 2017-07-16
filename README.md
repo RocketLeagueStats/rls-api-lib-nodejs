@@ -15,13 +15,24 @@
 
 This is the official NodeJS client library for the RocketLeagueStats API.
 
-### Installation
-`npm install rls-api`
+## Installation
+**Node.js 8.0.0 or newer is required.**  
+Ignore any warnings about unmet peer dependencies, as they're all optional.
+
+Simply execute `npm install rls-api` to add the library to your coding enviroment.
+
+Then add the following lines of code to the start of your query while making careful consideration to not exposing your API Key.
+```
+var rls = require('rls-api');
+
+var client = new rls.Client({
+    token: "REPLACE_ME_WITH_YOUR_API_KEY"
+});
+``` 
+After that, your ready to go! You can begin making queries to https://rocketleaguestats.com/!
 
 ### Links
+ * [Rocket League Stats](https://rocketleaguestats.com/)
  * [Example](https://github.com/RocketLeagueStats/rls-api-lib-nodejs/blob/master/example.js)
  * [API Documentation](http://documentation.rocketleaguestats.com/)
-: https://img.shields.io/david/RocketLeagueStats/rls-api-lib-nodejs.svg?maxAge=3600
-https://api.travis-ci.org/RocketLeagueStats/rls-api-lib-nodejs.svg
-https://img.shields.io/npm/v/RocketLeagueStats/rls-api-lib-nodejs.svg?maxAge=3600
-lol
+
