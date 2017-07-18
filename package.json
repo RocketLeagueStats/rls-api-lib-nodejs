@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/RocketLeagueStats/rls-api-nodejs#readme",
   "dependencies": {
-    "simple-rate-limiter": "^0.2.3",
-    "unirest": "^0.5.1"
+    "snekfetch": "^3.2.4"
   }
 }
