@@ -1,6 +1,6 @@
 const { Client, platforms, rankedPlaylists, statType } = require('../lib');
 const client = new Client({
-	token: 'OT6C3UTA86NIPGQ2HOFIJBE4LGPBLE17', // Your API key from https://developers.rocketleaguestats.com/
+	token: 'your token here', // Your API key from https://developers.rocketleaguestats.com/
 	api: 'https://api.rocketleaguestats.com/v1' // This is optional it defaults to this API anyway.
 });
 
