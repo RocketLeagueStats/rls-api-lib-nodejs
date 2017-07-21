@@ -8,31 +8,31 @@ client.platforms().then(platforms => {
 	console.log('Platforms:');
 	console.log(platforms);
 	console.log('');
-});
+}).catch(console.log);
 
 client.seasons().then(seasons => {
 	console.log('Seasons:');
 	console.log(seasons);
 	console.log('');
-});
+}).catch(console.log);
 
 client.playlists().then(playlists => {
 	console.log('Playlists:');
 	console.log(playlists);
 	console.log('');
-});
+}).catch(console.log);
 
 client.tiers().then(tiers => {
 	console.log('Tiers:');
 	console.log(tiers);
 	console.log('');
-});
+}).catch(console.error);
 
 client.player('76561198033338223', platforms.STEAM).then(player => {
 	console.log('Player:');
 	console.log(player);
 	console.log('');
-});
+}).catch(console.log);
 
 const players = [
     {"platformId":"1", "uniqueId":"76561198033338223"},
@@ -45,22 +45,22 @@ client.batch(players).then(players => {
 	console.log('Batch players:');
 	console.log(players);
 	console.log('');
-});
+}).catch(console.log);
 
 client.searchPlayers('Mike', 0).then(player => {
 	console.log('Searched player:');
 	console.log(player);
 	console.log('');
-});
+}).catch(console.log);
 
 client.rankedLeaderboard(rankedPlaylists.DUEL).then(leaderboard => {
 	console.log('leaderboard:');
 	console.log(leaderboard);
 	console.log('');
-});
+}).catch(console.log);
 
 client.statLeaderboard(statType.GOALS).then(sLeaderboard => {
 	console.log('Stat Leaderboard:');
 	console.log(sLeaderboard);
 	console.log('');
-});
+}).catch(console.log);
